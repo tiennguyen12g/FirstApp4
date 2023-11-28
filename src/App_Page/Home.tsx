@@ -19,9 +19,11 @@ export default function Home() {
           width: 100,
           height: 100,
         }}></View>
-      <Text style={{color: colors.lightColor}}>Light Color</Text>
-      <Text style={{color: colors.primaryColor}}>Primary Color</Text>
-      <Text style={{color: colors.darkColor}}>Dark Color</Text>
+      <Text style={{color: colors.secondary}}>Light Color</Text>
+      <Text style={{color: colors.tertiary}}>Primary Color</Text>
+      <Text style={{color: colors.secondary, fontSize: colors.sizeTitle}}>
+        Dark Color
+      </Text>
       <Logo width={100} />
       {/* <LogoShape width={100} height={100} /> */}
 

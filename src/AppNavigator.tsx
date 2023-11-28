@@ -13,6 +13,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Wallet from './App_Page/Wallet';
 import MyTheme from './Theme/Themes';
+import Introduction from './App_Page/InitialPage/Introduction';
 
 // const Tab = createMaterialBottomTabNavigator();
 const Tab = createBottomTabNavigator();
@@ -20,15 +21,14 @@ function AppNavigator() {
   const [authenticated, setAuthenticated] = useState(false);
   return (
     <NavigationContainer theme={MyTheme}>
-      {authenticated ? (
-        <Tab.Navigator initialRouteName="Home">
+      <Tab.Navigator initialRouteName="Home">
           <Tab.Screen
             name="Home"
             component={Home}
             options={{
               tabBarLabel: 'Home',
               tabBarIcon: ({focused, color, size}) => (
-                <AntDesign name="home" size={size} color={color} />
+                <Entypo name="home" size={size} color={color} />
               ),
               headerShown: false,
             }}
@@ -65,15 +65,12 @@ function AppNavigator() {
             options={{
               tabBarLabel: 'Profile',
               tabBarIcon: ({focused, color, size}) => (
-                <Entypo name="menu" size={size} color={color} />
+                <MaterialCommunityIcons name="account-settings" size={size} color={color} />
               ),
               headerShown: false,
             }}
           />
         </Tab.Navigator>
-      ) : (
-        <PinAndFingerprint setAuthenticated={setAuthenticated} />
-      )}
     </NavigationContainer>
   );
 }

@@ -1,48 +1,83 @@
-// // Update the type definition for your theme
-// type MyThemeProps = {
-//     dark: boolean;
-//     colors: {
-//       primary: string;
-//       background: string;
-//       card: string;
-//       text: string;
-//       border: string;
-//       notification: string;
-//       lightColor: string;
-//       primaryColor: string;
-//       darkColor: string;
-//     };
-//   };
-// const MyTheme: MyThemeProps  = {
-//     dark: false,
-//     colors: {
-//       primary: 'rgb(255, 45, 85)',
-//       background: 'rgb(242, 242, 242)',
-//       card: 'rgb(255, 255, 255)',
-//       text: 'rgb(28, 28, 30)',
-//       border: 'rgb(199, 199, 204)',
-//       notification: 'rgb(255, 69, 58)',
-//       lightColor: 'rgb(153, 208, 240)',
-//       primaryColor: 'rgb(70, 167, 223)',
-//       darkColor: 'rgb(7, 142, 219)',
 
-//     },
-//   };
-// export default MyTheme;
+
+const lightTheme = {
+  primary: 'rgb(245,98,81)',
+  secondary:'rgb(248,140,69)',
+  tertiary:'rgb(255,179,102)',
+  background: 'rgb(255, 255, 255)',
+
+  textTitle:"rgb(0,0,0)",
+  textSubtitle:"rgb(107,114,128)",
+  textSecondary: "rgb(156,156,156)",
+  textNormal:"rgb(145, 145, 145)",
+  textButtonGradient:"white",
+  textButtonBorder:"black",
+
+  button_Gradient_1:"rgb(252,204,50)",
+  button_Gradient_2:"rgb(245,95,82)",
+
+  activeIcon: 'rgb(248,140,69)',
+  deactiveIcon:'rgb(161, 161, 161)',
+
+}
+const darkTheme = {
+  primary: 'rgb(245,98,81)',
+  secondary:'rgb(248,140,69)',
+  tertiary:'rgb(255,179,102)',
+  background: 'rgb(255, 255, 255)',
+
+  textTitle:"rgb(0,0,0)",
+  textSubtitle:"rgb(107,114,128)",
+  textSecondary: "rgb(156,156,156)",
+  textButtonGradient:"white",
+  textButtonBorder:"black",
+
+  button_Gradient_1:"rgb(252,204,50)",
+  button_Gradient_2:"rgb(245,95,82)",
+
+  activeIcon: 'rgb(248,140,69)',
+  deactiveIcon:'rgb(217,217,217)',
+}
+
+const sizeDefault = {
+  sizeTitle: 26,
+  sizeSubtitle: 20,
+  sizeNormalText: 16,
+  size_Small_Text: 12,
+}
+export {lightTheme, darkTheme, sizeDefault,}
 
 
 const customTheme = {
   dark: false,
   colors: {
-      primary: 'rgb(7, 142, 219)',
+      primary: 'rgb(245,98,81)',
+      secondary:'rgb(248,140,69)',
+      tertiary:'rgb(255,179,102)',
       background: 'rgb(255, 255, 255)',
+
+      textTitle:"rgb(0,0,0)",
+      textSubtitle:"rgb(107,114,128)",
+      textSecondary: "rgb(156,156,156)",
+      textButtonGradient:"white",
+      textButtonBorder:"black",
+
+      sizeTitle: 50,
+      sizeSubtitle: 20,
+      sizeNormalText: 16,
+      size_Small_Text: 12,
+
+      button_Gradient_1:"rgb(252,204,50)",
+      button_Gradient_2:"rgb(245,95,82)",
+
+      activeIcon: 'rgb(248,140,69)',
+      deactiveIcon:'rgb(217,217,217)',
+
+      // default value of the package
       card: 'rgb(255, 255, 255)',
       text: 'rgb(28, 28, 30)',
       border: 'rgb(199, 199, 204)',
       notification: 'rgb(255, 69, 58)',
-      lightColor: 'rgb(153, 208, 240)',
-      primaryColor: 'rgb(70, 167, 223)',
-      darkColor: 'rgb(7, 142, 219)',
   },
 };
 export default customTheme;
